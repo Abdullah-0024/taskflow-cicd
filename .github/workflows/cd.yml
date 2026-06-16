@@ -15,10 +15,10 @@ jobs:
       - name: Step 1 – Checkout Code
         uses: actions/checkout@v4
 
-      # - name: Step 3 – Deploy to Render via Webhook
-      #   run: |
-      #     curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      - name: Step 3 – Deploy to Render via Webhook
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
 
-      # - name: Step 4 – Confirm Deployment
-      #   run: |
-      #     echo "✅ Deployment triggered at $(date)"
+      - name: Step 4 – Confirm Deployment
+        run: |
+          echo "✅ Deployment triggered at $(date)"
