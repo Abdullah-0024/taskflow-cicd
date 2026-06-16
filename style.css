@@ -1,0 +1,16 @@
+/* style.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+nav { background: #2c3e50; padding: 10px 20px; }
+nav a { color: white; text-decoration: none; margin-right: 15px; font-weight: bold; }
+nav a:hover { color: #f39c12; }
+.container { max-width: 900px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+h1 { color: #2c3e50; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #2c3e50; color: white; }
+.btn { display: inline-block; padding: 8px 16px; background: #2c3e50; color: white; border-radius: 4px; text-decoration: none; margin: 5px 2px; cursor: pointer; border: none; font-size: 14px; }
+.btn:hover { background: #f39c12; }
+.high { color: red; font-weight: bold; }
+.medium { color: orange; font-weight: bold; }
+.low { color: green; font-weight: bold; }
