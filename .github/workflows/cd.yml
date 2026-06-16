@@ -1,0 +1,24 @@
+# .github/workflows/cd.yml
+name: CD – Deploy to Render
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: development
+
+    steps:
+      - name: Step 1 – Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Step 3 – Deploy to Render via Webhook
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+
+      - name: Step 4 – Confirm Deployment
+        run: |
+          echo "✅ Deployment triggered at $(date)"
