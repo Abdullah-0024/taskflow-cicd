@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Step 1 – Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Step 3 – Deploy to Render via Webhook
         run: |
